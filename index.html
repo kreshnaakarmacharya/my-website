@@ -2,28 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio | Fictional Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Krishnaa Karmacharya | Backend Developer</title>
+    <meta name="description" content="Portfolio of Krishnaa Karmacharya, a backend developer specializing in Java, React, and Node.js.">
+    
+    <!-- Google Fonts: Poppins (Headings) & Inter (Body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <meta name="description" content="Welcome to my Portfolio! I'm a web developer specializing in creating modern , responsive webistes.">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- ================= NAVBAR ================= -->
     <header>
         <nav class="navbar">
-            <div class="logo">DevFolio</div>
+            <a href="#home" class="logo">Dev<span>Folio</span></a>
 
             <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Project</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
             <div class="menu-toggle" id="menuToggle">
-                ☰
+                <i class="fa-solid fa-bars"></i>
             </div>
         </nav>
     </header>
@@ -34,210 +43,212 @@
             <h1>Hello, I'm <span>Krishnaa Karmacharya</span></h1>
             <h3>Backend Developer</h3>
             <p>
-                I build modern, responsive and visually engaging web experiences 
-                using clean and efficient code.
+                I build modern, responsive, and visually engaging web experiences 
+                using clean, efficient, and scalable code.
             </p>
 
             <div class="home-buttons">
-                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="#projects" class="btn-primary"><i class="fa-solid fa-code"></i> View Projects</a>
+                <a href="#contact" class="btn-secondary"><i class="fa-regular fa-paper-plane"></i> Contact Me</a>
             </div>
         </div>
     </section>
 
     <!-- ================= ABOUT SECTION ================= -->
-<section id="about" class="about reveal">
-    <div class="about-container">
+    <section id="about" class="about reveal">
+        <div class="about-container">
+            <div class="about-image">
+                <div class="img-wrapper">
+                    <img src="website-pic.jpeg" alt="Krishnaa Karmacharya">
+                </div>
+            </div>
 
-        <div class="about-image">
-            <img src="website-pic.jpeg" alt="About Image">
+            <div class="about-content">
+                <h2 class="section-title">About Me</h2>
+                <h3>Backend Java Developer & Full-Stack Enthusiast</h3>
+
+                <p>
+                    Hello! I'm <strong>Krishnaa Karmacharya</strong>, a passionate backend Java developer with experience building robust, scalable applications. 
+                    I also work with <strong>React</strong> and <strong>Node.js</strong> to develop modern, responsive, and dynamic web applications.
+                </p>
+
+                <p>
+                    My focus is on writing clean, maintainable code while creating efficient and user-friendly systems. 
+                    I enjoy learning new technologies, solving complex problems, and transforming ideas into functional digital solutions.
+                </p>
+
+                <div class="skills">
+                    <div class="skill">
+                        <div class="skill-info">
+                            <span><i class="fa-brands fa-java"></i> Java</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress java" data-width="90%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-info">
+                            <span><i class="fa-solid fa-leaf"></i> Spring Boot</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress spring" data-width="85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-info">
+                            <span><i class="fa-brands fa-react"></i> React</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress react" data-width="80%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-info">
+                            <span><i class="fa-brands fa-node-js"></i> Node.js</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress node" data-width="75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="about-content">
-            <h2>About Me</h2>
-            <h3>Backend Java Developer & Full-Stack Enthusiast</h3>
-
-                Hello! I'm <strong>Krishnaa Karmacharya</strong>, a passionate backend Java developer with experience building robust, scalable applications. 
-                I also work with <strong>React</strong> and <strong>Node.js</strong> to develop modern, responsive, and dynamic web applications.
+    <!-- ================= PROJECT SECTION ================= -->
+    <section id="projects" class="projects reveal">
+        <div class="projects-container">
+            <h2 class="section-title center">My Projects</h2>
+            <p class="section-subtitle center">
+                Here are some projects that showcase my development expertise and creativity.
             </p>
 
-            <p>
-                My focus is on writing clean, maintainable code while creating efficient and user-friendly systems. 
-                I enjoy learning new technologies, solving complex problems, and transforming ideas into functional digital solutions.
-            </p>
-
-            <div class="skills">
-                <div class="skill">
-                    <span>Java</span>
-                    <div class="progress-bar">
-                        <div class="progress java"></div>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-notes-medical"></i></div>
+                    <h3>E-Pharmacy Vault</h3>
+                    <p>A Java-based backend system designed to manage pharmacy inventory, orders, and user authentication securely.</p>
+                    <div class="project-buttons">
+                        <span class="project-badge">Coming Soon</span>
                     </div>
                 </div>
 
-                <div class="skill">
-                    <span>Spring Boot</span>
-                    <div class="progress-bar">
-                        <div class="progress spring"></div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-gamepad"></i></div>
+                    <h3>Tic-Tac-Toe</h3>
+                    <p>A classic Tic-Tac-Toe game built with JavaScript, featuring interactive gameplay and a responsive UI.</p>
+                    <div class="project-buttons">
+                        <a href="https://tic-tac-toe-kreshnaa.vercel.app/" target="_blank" class="project-btn"><i class="fa-solid fa-link"></i> Live</a>
+                        <a href="https://github.com/kreshnaakarmacharya/Tic-Tac-Toe" target="_blank" class="project-btn-outline"><i class="fa-brands fa-github"></i> Code</a>
                     </div>
                 </div>
 
-                <div class="skill">
-                    <span>React</span>
-                    <div class="progress-bar">
-                        <div class="progress react"></div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-hand-scissors"></i></div>
+                    <h3>Rock Paper Scissors</h3>
+                    <p>An interactive game using JavaScript with score tracking and a simple, clean user interface.</p>
+                    <div class="project-buttons">
+                        <a href="https://rock-paper-sissor-k.vercel.app/" target="_blank" class="project-btn"><i class="fa-solid fa-link"></i> Live</a>
+                        <a href="https://github.com/kreshnaakarmacharya/Rock-Paper-Sissor-Game" target="_blank" class="project-btn-outline"><i class="fa-brands fa-github"></i> Code</a>
                     </div>
                 </div>
 
-                <div class="skill">
-                    <span>Node.js</span>
-                    <div class="progress-bar">
-                        <div class="progress node"></div>
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-blog"></i></div>
+                    <h3>Simple Blog Page</h3>
+                    <p>A Node.js-powered blog platform allowing users to create, edit, and delete posts with clean UI.</p>
+                    <div class="project-buttons">
+                        <a href="https://blog-kreshnaa.vercel.app/blogs" target="_blank" class="project-btn"><i class="fa-solid fa-link"></i> Live</a>
+                        <a href="https://github.com/kreshnaakarmacharya/SimpleBlogPage" target="_blank" class="project-btn-outline"><i class="fa-brands fa-github"></i> Code</a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-calculator"></i></div>
+                    <h3>Word Counter & Converter</h3>
+                    <p>A React app to count words, convert text formats, and provide text statistics with a responsive UI.</p>
+                    <div class="project-buttons">
+                        <a href="https://word-count-and-convert.vercel.app/" target="_blank" class="project-btn"><i class="fa-solid fa-link"></i> Live</a>
+                        <a href="https://github.com/kreshnaakarmacharya/WordCountAndConvert" target="_blank" class="project-btn-outline"><i class="fa-brands fa-github"></i> Code</a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                    <h3>Student Management</h3>
+                    <p>A Java-based application to manage student records, track performance, and streamline tasks.</p>
+                    <div class="project-buttons">
+                        <span class="project-badge">Coming Soon</span>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-
-        </div>
-
-    </div>
-</section>
-
-<!-- ================= PROJECT SECTION ================= -->
-<section id="projects" class="projects reveal">
-    <div class="projects-container">
-        <h2 class="section-title">My Projects</h2>
-        <p class="section-subtitle">
-            Here are some fictional projects that showcase my development expertise and creativity.
-        </p>
-
-        <div class="project-grid">
-
-             <div class="project-card">
-                <h3>E-Pharmacy Vault</h3>
+    <!-- ================= CONTACT SECTION ================= -->
+    <section id="contact" class="contact reveal">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2 class="section-title">Contact Me</h2>
                 <p>
-                    A Java-based backend system designed to manage pharmacy inventory, 
-                    orders, and user authentication securely. Deployment coming soon.
+                    Have a project in mind or want to collaborate? 
+                    Feel free to reach out. I’m always open to discussing 
+                    new opportunities and creative ideas.
                 </p>
-                <div class="project-buttons">
-                    <a href="#" class="project-btn-outline disabled">Live Demo</a>
-                    <a href="#" class="project-btn-outline disabled">Source Code</a>
+
+                <div class="contact-links">
+                    <a href="mailto:krishnaakarmacharya82@gmail.com" class="contact-link">
+                        <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                        <span>krishnaakarmacharya82@gmail.com</span>
+                    </a>
+
+                    <a href="https://wa.me/9769760576" target="_blank" class="contact-link">
+                        <div class="icon-box"><i class="fa-brands fa-whatsapp"></i></div>
+                        <span>+977 9769760576</span>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/krishnaa-karmacharya-a2661234b/" target="_blank" class="contact-link">
+                        <div class="icon-box"><i class="fa-brands fa-linkedin-in"></i></div>
+                        <span>LinkedIn Profile</span>
+                    </a>
                 </div>
             </div>
 
-            <div class="project-card">
-                <h3>Tic-Tac-Toe</h3>
-                <p>
-                    A classic Tic-Tac-Toe game built with JavaScript, featuring interactive gameplay 
-                    and a responsive UI for desktop and mobile devices.
-                </p>
-                <div class="project-buttons">
-                    <a href="https://tic-tac-toe-kreshnaa.vercel.app/" class="project-btn">Live Demo</a>
-                    <a href="https://github.com/kreshnaakarmacharya/Tic-Tac-Toe" class="project-btn-outline">Source Code</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <h3>Rock Paper Scissor Game</h3>
-                <p>
-                    An interactive Rock Paper Scissor game using JavaScript with score tracking 
-                    and a simple, clean interface.
-                </p>
-                <div class="project-buttons">
-                    <a href="https://rock-paper-sissor-k.vercel.app/" class="project-btn">Live Demo</a>
-                    <a href="https://github.com/kreshnaakarmacharya/Rock-Paper-Sissor-Game" class="project-btn-outline">Source Code</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <h3>Simple Blog Page</h3>
-                <p>
-                    A Node.js-powered blog platform allowing users to create, edit, and delete posts 
-                    with clean UI and efficient backend logic.
-                </p>
-                <div class="project-buttons">
-                    <a href="https://blog-kreshnaa.vercel.app/blogs" class="project-btn">Live Demo</a>
-                    <a href="https://github.com/kreshnaakarmacharya/SimpleBlogPage" class="project-btn-outline">Source Code</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <h3>Word Counter & Converter</h3>
-                <p>
-                    A React-based application to count words, convert text to uppercase/lowercase, 
-                    and provide text statistics with a responsive and user-friendly interface.
-                </p>
-                <div class="project-buttons">
-                    <a href="https://word-count-and-convert.vercel.app/" class="project-btn">Live Demo</a>
-                    <a href="https://github.com/kreshnaakarmacharya/WordCountAndConvert" class="project-btn-outline">Source Code</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <h3>Student Management System</h3>
-                <p>
-                    A Java-based application to manage student records, track academic 
-                    performance, and streamline administrative tasks. Deployment coming soon.
-                </p>
-                <div class="project-buttons">
-                    <a href="#" class="project-btn-outline disabled">Live Demo</a>
-                    <a href="#" class="project-btn-outline disabled">Source Code</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <h3>Appointment Booking System</h3>
-                <p>
-                    A Java-based system for scheduling and managing appointments efficiently, 
-                    ideal for hospitals or service centers. Deployment coming soon.
-                </p>
-                <div class="project-buttons">
-                    <a href="#" class="project-btn-outline disabled">Live Demo</a>
-                    <a href="#" class="project-btn-outline disabled">Source Code</a>
-                </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="input-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="contact-btn" id="submitBtn">
+                        <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                    <p id="formMessage"></p>
+                </form>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ================= CONTACT SECTION ================= -->
-<section id="contact" class="contact reveal">
-    <div class="contact-container">
+    <button id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
 
-        <div class="contact-info">
-            <h2>Contact Me</h2>
-            <p>
-                Have a project in mind or want to collaborate? 
-                Feel free to reach out. I’m always open to discussing 
-                new opportunities and creative ideas.
-            </p>
-
-              <div class="contact-links">
-                <h4>Connect With Me</h4>
-
-                <a href="mailto:krishnaakarmacharya82@gmail.com" class="contact-link">
-                    📧 krishnaakarmacharya82@gmail.com
-                </a>
-
-                <a href="https://wa.me/9769760576" target="_blank" class="contact-link">
-                    📱 +977 9769760576
-                </a>
-
-                <a href="https://www.linkedin.com/in/krishnaa-karmacharya-a2661234b/" target="_blank" class="contact-link">
-                    💼 https://www.linkedin.com/in/krishnaa-karmacharya-a2661234b/
-                </a>
-        </div>
-        </div>
-
-        <div class="contact-form">
-            <form id="contactForm">
-                <input type="text" id="name" placeholder="Your Name">
-                <input type="email" id="email" placeholder="Your Email">
-                <textarea id="message" rows="5" placeholder="Your Message"></textarea>
-                <button type="submit" class="contact-btn">Send Message</button>
-                <p id="formMessage"></p>
-            </form>
-        </div>
-
-    </div>
-</section>
     <script src="script.js"></script>
-    <button id="scrollTopBtn">↑</button>
 </body>
 </html>
