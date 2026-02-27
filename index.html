@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio | Fictional Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="description" content="Welcome to my Portfolio! I'm a web developer specializing in creating modern , responsive webistes.">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">DevFolio</div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="menu-toggle" id="menuToggle">
+                ☰
+            </div>
+        </nav>
+    </header>
+
+    <!-- ================= HOME SECTION ================= -->
+    <section id="home" class="home reveal">
+        <div class="home-content">
+            <h1>Hello, I'm <span>Alex Carter</span></h1>
+            <h3>Creative Frontend Developer</h3>
+            <p>
+                I build modern, responsive and visually engaging web experiences 
+                using clean and efficient code.
+            </p>
+
+            <div class="home-buttons">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="#contact" class="btn-secondary">Hire Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+<section id="about" class="about reveal">
+    <div class="about-container">
+
+        <div class="about-image">
+            <img src="website-pic.jpeg" alt="About Image">
+        </div>
+
+        <div class="about-content">
+            <h2>About Me</h2>
+            <h3>Passionate Web Developer & Creative Thinker</h3>
+
+            <p>
+                I am Alex Carter, a fictional frontend developer with over 5 years of 
+                experience building modern, responsive, and user-focused web applications. 
+                My mission is to transform ideas into powerful digital experiences.
+            </p>
+
+            <p>
+                I specialize in clean UI architecture, performance optimization, 
+                and intuitive design systems. I believe great design is not just 
+                about visuals — it’s about usability, accessibility, and impact.
+            </p>
+
+            <div class="skills">
+                <div class="skill">
+                    <span>HTML</span>
+                    <div class="progress-bar">
+                        <div class="progress html"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>CSS</span>
+                    <div class="progress-bar">
+                        <div class="progress css"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="progress-bar">
+                        <div class="progress js"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= PROJECT SECTION ================= -->
+<section id="projects" class="projects reveal">
+    <div class="projects-container">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">
+            Here are some fictional projects that showcase my development expertise and creativity.
+        </p>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <h3>E-Commerce Platform</h3>
+                <p>
+                    A fully responsive online shopping platform featuring dynamic product 
+                    listings, cart management, and secure checkout simulation.
+                </p>
+                <div class="project-buttons">
+                    <a href="#" class="project-btn">Live Demo</a>
+                    <a href="#" class="project-btn-outline">Source Code</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Task Management App</h3>
+                <p>
+                    A productivity-focused web application that allows users to manage 
+                    tasks efficiently with real-time updates and clean UI interactions.
+                </p>
+                <div class="project-buttons">
+                    <a href="#" class="project-btn">Live Demo</a>
+                    <a href="#" class="project-btn-outline">Source Code</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Portfolio Dashboard</h3>
+                <p>
+                    A customizable personal dashboard displaying analytics, activity 
+                    tracking, and interactive data visualizations.
+                </p>
+                <div class="project-buttons">
+                    <a href="#" class="project-btn">Live Demo</a>
+                    <a href="#" class="project-btn-outline">Source Code</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTACT SECTION ================= -->
+<section id="contact" class="contact reveal">
+    <div class="contact-container">
+
+        <div class="contact-info">
+            <h2>Contact Me</h2>
+            <p>
+                Have a project in mind or want to collaborate? 
+                Feel free to reach out. I’m always open to discussing 
+                new opportunities and creative ideas.
+            </p>
+
+              <div class="contact-links">
+                <h4>Connect With Me</h4>
+
+                <a href="mailto:alex.carter.dev@example.com" class="contact-link">
+                    📧 alex.carter.dev@example.com
+                </a>
+
+                <a href="https://wa.me/15551234567" target="_blank" class="contact-link">
+                    📱 +1 (555) 123-4567 (WhatsApp)
+                </a>
+
+                <a href="https://www.linkedin.com/in/alexcarterdev" target="_blank" class="contact-link">
+                    💼 linkedin.com/in/alexcarterdev
+                </a>
+        </div>
+        </div>
+
+        <div class="contact-form">
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name">
+                <input type="email" id="email" placeholder="Your Email">
+                <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+                <button type="submit" class="contact-btn">Send Message</button>
+                <p id="formMessage"></p>
+            </form>
+        </div>
+
+    </div>
+</section>
+    <script src="script.js"></script>
+    <button id="scrollTopBtn">↑</button>
+</body>
+</html>

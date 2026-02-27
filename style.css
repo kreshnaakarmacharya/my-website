@@ -1,0 +1,609 @@
+/* ================= GLOBAL ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #2A004E;
+    color: #ffffff;
+}
+
+/* ================= NAVBAR ================= */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2A004E;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #F14A00;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #C62300;
+}
+
+/* Mobile Toggle */
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* ================= HOME SECTION ================= */
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #2A004E 40%,
+        #500073 70%,
+        #C62300 100%
+    );
+}
+
+.home-content h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.home-content h1 span {
+    color: #F14A00;
+}
+
+.home-content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.home-content p {
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+/* Buttons */
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #F14A00;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #C62300;
+}
+
+.btn-secondary {
+    border: 2px solid #F14A00;
+    color: #F14A00;
+}
+
+.btn-secondary:hover {
+    background-color: #F14A00;
+    color: white;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: -100%;
+        flex-direction: column;
+        background-color: #2A004E;
+        width: 200px;
+        padding: 20px;
+        gap: 20px;
+        transition: 0.4s;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .home-content h1 {
+        font-size: 32px;
+    }
+}
+
+/* ================= ABOUT SECTION ================= */
+
+.about {
+    padding: 100px 20px;
+    background-color: #2A004E;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #F14A00;
+}
+
+.about-content h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    color: #dddddd;
+}
+
+/* ================= SKILLS ================= */
+
+.skills {
+    margin-top: 25px;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill span {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #500073;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Skill Levels */
+.progress.html {
+    width: 95%;
+    background-color: #F14A00;
+}
+
+.progress.css {
+    width: 90%;
+    background-color: #C62300;
+}
+
+.progress.js {
+    width: 85%;
+    background-color: #F14A00;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content h2 {
+        font-size: 28px;
+    }
+}
+
+/* ================= PROJECT SECTION ================= */
+
+.projects {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #2A004E, #500073);
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #F14A00;
+}
+
+.section-subtitle {
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+    color: #dddddd;
+    line-height: 1.6;
+}
+
+/* Grid Layout */
+.project-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Project Card */
+.project-card {
+    background-color: #2A004E;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    text-align: left;
+}
+
+.project-card h3 {
+    margin-bottom: 15px;
+    color: #F14A00;
+}
+
+.project-card p {
+    margin-bottom: 20px;
+    color: #dddddd;
+    line-height: 1.6;
+}
+
+/* Hover Effect */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+}
+
+/* Buttons */
+.project-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.project-btn,
+.project-btn-outline {
+    padding: 8px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+/* Filled Button */
+.project-btn {
+    background-color: #F14A00;
+    color: white;
+}
+
+.project-btn:hover {
+    background-color: #C62300;
+}
+
+/* Outline Button */
+.project-btn-outline {
+    border: 2px solid #F14A00;
+    color: #F14A00;
+}
+
+.project-btn-outline:hover {
+    background-color: #F14A00;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 28px;
+    }
+
+    .project-card {
+        text-align: center;
+    }
+
+    .project-buttons {
+        justify-content: center;
+    }
+}
+
+/* ================= CONTACT SECTION ================= */
+
+.contact {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #500073, #2A004E);
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+/* Contact Info */
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #F14A00;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+.info-item {
+    margin-bottom: 20px;
+}
+
+.info-item h4 {
+    color: #C62300;
+    margin-bottom: 5px;
+}
+
+/* Contact Form */
+.contact-form {
+    flex: 1;
+    background-color: #2A004E;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #500073;
+    color: white;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #cccccc;
+}
+
+.contact-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background-color: #F14A00;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #C62300;
+}
+
+#formMessage {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info h2 {
+        font-size: 28px;
+    }
+}
+
+/* ================= CONTACT LINKS ================= */
+
+.contact-links {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-links h4 {
+    margin-bottom: 10px;
+    color: #F14A00;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: #500073;
+    transition: 0.3s ease;
+    font-size: 14px;
+}
+
+.contact-link:hover {
+    background-color: #F14A00;
+    color: #ffffff;
+    transform: translateX(5px);
+}
+/* ================= NAVBAR SCROLL EFFECT ================= */
+
+.navbar.scrolled {
+    background-color: #500073;
+    transition: background-color 0.3s ease;
+}
+
+/* ================= ACTIVE NAV LINK ================= */
+
+.nav-links a.active {
+    color: #F14A00;
+    font-weight: bold;
+}
+
+/* ================= SCROLL REVEAL ================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ================= SCROLL TO TOP BUTTON ================= */
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: #F14A00;
+    color: white;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    transition: 0.3s ease;
+    z-index: 1000;
+}
+
+#scrollTopBtn:hover {
+    background-color: #C62300;
+    transform: translateY(-5px);
+}
+
+
+/* Small screens (mobile) */
+@media (max-width: 600px) {
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+        border: 2px solid #333;
+    }
+
+    .about-intro h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-intro p {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+}
+
+/* Extra small screens (very small devices) */
+@media (max-width: 400px) {
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .about-intro h2 {
+        font-size: 1.3rem;
+    }
+
+    .about-intro p {
+        font-size: 0.9rem;
+    }
+}
