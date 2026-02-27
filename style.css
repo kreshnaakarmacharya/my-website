@@ -221,6 +221,10 @@ header {
 
 /* ================= SKILLS ================= */
 
+.progress.java { width: 90%; background-color: #f8981d; }
+.progress.spring { width: 85%; background-color: #6db33f; }
+.progress.react { width: 80%; background-color: #61dafb; }
+.progress.node { width: 75%; background-color: #68a063; }
 .skills {
     margin-top: 25px;
 }
