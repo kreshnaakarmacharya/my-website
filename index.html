@@ -258,13 +258,13 @@
             <div class="contact-form">
                 <form id="contactForm">
                     <div class="input-group">
-                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="input-group">
-                        <input type="email" id="email" placeholder="Your Email" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="input-group">
-                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
                     </div>
                     <button type="submit" class="contact-btn" id="submitBtn">
                         <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
@@ -276,6 +276,11 @@
     </section>
 
     <button id="scrollTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <script>
+        emailjs.init({
+            publicKey: "8dO1Gwa4_s9wDDCxC"
+        });
+    </script>
 
     <script src="script.js"></script>
 </body>
