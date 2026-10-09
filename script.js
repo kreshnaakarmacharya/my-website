@@ -102,7 +102,32 @@ scrollTopBtn.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+
+// ================= PROJECT FILTERING LOGIC =================
+const filterBtns = document.querySelectorAll(".filter-btn");
+const projectCards = document.querySelectorAll(".project-card");
+
+filterBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        // Remove active class from all buttons
+        filterBtns.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        const filter = btn.getAttribute("data-filter");
+
+        projectCards.forEach(card => {
+            const categories = card.getAttribute("data-category").split(" ");
+            if (filter === "all" || categories.includes(filter)) {
+                card.style.display = "flex";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    });
+});
+
 // ================= CONTACT FORM =================
+
 
 const contactForm = document.getElementById("contactForm");
 const formMessage = document.getElementById("formMessage");
